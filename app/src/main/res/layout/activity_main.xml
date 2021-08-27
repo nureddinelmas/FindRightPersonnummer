@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="185dp"
+        android:layout_marginBottom="185dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="93dp"
+        android:onClick="foundPIK"
+        android:text="Hitta"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="274dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="149dp"
+        android:ems="10"
+        android:hint="Enter a personal Identity Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
